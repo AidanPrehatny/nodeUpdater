@@ -1,0 +1,54 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "plugins": [
+        "flowtype"
+    ],
+    "rules": {
+        "import/prefer-default-export": ["off"],
+        "import/extensions": ["error", "never", { "jsx": "off" }],
+        "react/jsx-indent": ["warning", 12],
+        "react/jsx-indent-props": ["warning", 2],
+        "react/no-unused-state": "warning",
+        "react/prop-types": "off",
+        "babel/semi": 0,
+        "babel/quotes": 0,
+        "no-console": "off",
+        "no-restricted-globals": "off",
+        "indent": ["error", 4],
+        "object-shorthand": ["off"],
+        "semi": ["error", "always"],
+        "brace-style": ["warn", "1tbs", {"allowSingleLine": true }],
+        "space-in-parens": ["warn", "never"],
+        "space-before-function-paren": ["warn", {
+            "anonymous": "never",
+            "named": "never",
+            "asyncArrow": "ignore"
+        }],
+        "comma-spacing": ["warn", {"before": false, "after": true}],
+        "quotes": ["warn", "single", {"avoidEscape": true} ],
+        "max-len": ["warn", 160, 4, {
+          "ignoreUrls": true,
+          "ignoreComments": false,
+          "ignoreRegExpLiterals": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
+        }],
+        "space-infix-ops": ["warn", {"int32Hint": false}],
+        "object-curly-spacing": ["warn", "never"],
+        "curly": ["warn", "multi-line"],
+        "no-multi-spaces": ["warn"],
+
+        "prefer-arrow-callback": "off",
+        "prefer-template": "off",
+        "no-underscore-dangle": "off",
+        "no-var": "off",
+        "vars-on-top": "off",
+        "comma-dangle": ["error", "never"],
+        "no-else-return": "off",
+        "no-unused-vars": ["error", {
+            "vars": "local",
+            "args": "none",
+            "ignoreRestSiblings": true }]
+    }
+}
