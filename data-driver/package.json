@@ -1,0 +1,20 @@
+{
+  "name": "node-postgres-promises",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "sudo -H -u postgres babel-node ./bin/www",
+    "driver": "babel-node --presets env driver.es6"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "bluebird": "^3.5.1",
+    "pg-promise": "^8.4.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0"
+  }
+}
